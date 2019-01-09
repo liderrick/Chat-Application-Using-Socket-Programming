@@ -14,13 +14,13 @@ Boilerplate code from Oregon State University, CS 344 - Winter 2018 and Computer
 
 ### Running chatserve.py
 1. Run `python3 chatserve.py <port_number>` to start the chat server. For example, `python3 chatserve.py 12345`.
-  * In the unlikely event that the port is in use, use a different port number in the range of `0 - 65535`.
+    * In the unlikely event that the port is in use, use a different port number in the range of `0 - 65535`.
 2. Now any number of chat clients, using `chatclient.exe`, can connect to the chat server.
 3. Exit the chat server by sending SIGINT `[Ctrl]+C`.
 
 ### Running chatclient.exe
 1. Run `make` to compile `chatclient.exe` from `chatclient.c`.
 2. Run `chatclient.exe <hostname> <port_number>` to connect to the chat server.
-  * The `hostname` should be the name of the machine hosting the chat server `chatserve.py`. If you are running locally, it is most likely `localhost` or `127.0.0.1`.
-  * The `port_number` needs to match the port number the chat server is running on.
-  * To continue with the example, assuming the chat server is running on the same machine as the chat client, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
+    * The `hostname` should be the name of the machine hosting the chat server `chatserve.py`. If you are running locally, it is most likely `localhost` or `127.0.0.1`.
+    * The `port_number` needs to match the port number the chat server is running on.
+    * To continue with the example, assuming the chat server is running on the same machine as the chat client, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
