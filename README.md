@@ -13,7 +13,8 @@ Boilerplate code from Oregon State University, CS 344 - Winter 2018 and Computer
 * Either the chat client or server can end a chat session by sending `\quit` when it is their turn to send a message. The session is closed gracefully on the other end.
 
 ### Running chatserve.py
-1. Run `python3 chatserve.py <port_number>` to start the chat server, e.g. `python3 chatserve.py 12345`. In the unlikely event that the port is in use, use a different port number in the range of `0 - 65535`.
+1. Run `python3 chatserve.py <port_number>` to start the chat server. For example, `python3 chatserve.py 12345`.
+  * In the unlikely event that the port is in use, use a different port number in the range of `0 - 65535`.
 2. Now any number of chat clients, using `chatclient.exe`, can connect to the chat server.
 3. Exit the chat server by sending SIGINT `[Ctrl]+C`.
 
@@ -22,4 +23,4 @@ Boilerplate code from Oregon State University, CS 344 - Winter 2018 and Computer
 2. Run `chatclient.exe <hostname> <port_number>` to connect to the chat server.
   * The `hostname` should be the name of the machine hosting the chat server `chatserve.py`. If you are running locally, it is most likely `localhost` or `127.0.0.1`.
   * The `port_number` needs to match the port number the chat server is running on.
-  * In the example above, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
+  * To continue with the example, assuming the chat server is running on the same machine as the chat client, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
