@@ -7,13 +7,14 @@ Boilerplate code from Oregon State University, CS 344 - Winter 2018 and Computer
 ## Instructions
 
 ### Notes
-* The chat server `chatserve.py` must be started prior to the chat client `chatclient.exe`.
-* The chat client and server takes turn sending messages.
-* Either chat client or server can end a chat session by sending `\quit` when it is their turn to send a message. The session is closed gracefully on the other end.
+* The chat server `chatserve.py` must be started prior to any chat client `chatclient.exe`.
+* The server can hold multiple, concurrent chat sessions with different clients. However, the chat server is only able to respond to one client at a time, in an iterative first-come-first-serve fashion.
+* The chat client and server take turn sending messages.
+* Either the chat client or server can end a chat session by sending `\quit` when it is their turn to send a message. The session is closed gracefully on the other end.
 
 ### Running chatserve.py
 1. Run `python3 chatserve.py <port_number>` to start the chat server, e.g. `python3 chatserve.py 12345`. In the unlikely event that the port is in use, use a different port number in the range of `0 - 65535`.
-2. Now any number of chat clients, using `chatclient.exe`, can connect to the chat server. Although multiple chat clients can connect to the chat server concurrently, the chat server is only able to respond to one client at a time, in an iterative first-come-first-serve fashion.
+2. Now any number of chat clients, using `chatclient.exe`, can connect to the chat server.
 3. Exit the chat server by sending SIGINT `[Ctrl]+C`.
 
 ### Running chatclient.exe
