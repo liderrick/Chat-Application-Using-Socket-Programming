@@ -19,4 +19,7 @@ Boilerplate code from Oregon State University, CS 344 - Winter 2018 and Computer
 
 ### Running chatclient.exe
 1. Run `make` to compile `chatclient.exe` from `chatclient.c`.
-2. Run `chatclient.exe <hostname> <port_number>` to connect to the chat server. The `hostname` should be the name of the machine hosting the chat server. If you are running locally, it is most likely `localhost` or `127.0.0.1`. The `port_number` needs to match the port number the chat server is running on. In the example above, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
+2. Run `chatclient.exe <hostname> <port_number>` to connect to the chat server.
+  * The `hostname` should be the name of the machine hosting the chat server `chatserve.py`. If you are running locally, it is most likely `localhost` or `127.0.0.1`.
+  * The `port_number` needs to match the port number the chat server is running on.
+  * In the example above, the chat client would connect to the chat server by running `chatclient.exe localhost 12345`.
